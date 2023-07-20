@@ -1,0 +1,19 @@
+{
+  "name": "project-healer",
+  "version": "1.0.0",
+  "description": "This is a healthcare app built using MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "server-install": "cd server && npm install",
+    "start": "cd server && node server.js",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "Utsav Seth",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

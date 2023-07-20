@@ -1,0 +1,406 @@
+/* Global Styles */
+:root {
+  --theme-spacing-1: 8px;
+  --theme-spacing-2: 16px;
+  --theme-spacing-3: 24px;
+  --theme-spacing-4: 32px;
+  --theme-spacing-5: 40px;
+  --theme-drawer-width: 250px;
+}
+
+strong,
+b {
+  font-weight: bold !important;
+}
+
+/* Not Found */
+.not-found.container {
+  margin: var(--theme-spacing-2) var(--theme-spacing-1);
+}
+
+.not-found.h2 {
+  color: #d6d3cd;
+}
+
+.not-found.body1-1 {
+  color: #c1bcb3;
+}
+
+.not-found.body1-2 {
+  color: #e8e6e3;
+}
+
+/* HomePage */
+.home-page-grid.main {
+  margin: auto 0;
+}
+
+.home-page-grid.container {
+  max-width: 80%;
+  margin: var(--theme-spacing-3) auto;
+}
+
+.home-page-grid.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 225px;
+  margin: var(--theme-spacing-1);
+}
+
+/* Login */
+.login-grid.main {
+  margin: auto 0;
+}
+
+.login-grid.btn {
+  margin: var(--theme-spacing-1) 0;
+}
+
+.login-grid.container {
+  margin: var(--theme-spacing-3) auto;
+}
+
+.login-grid.content {
+  display: flex;
+  flex-direction: column;
+  margin: var(--theme-spacing-1) 0;
+}
+
+.login-grid.content > div {
+  margin: var(--theme-spacing-1) 0;
+}
+
+/* Sign Up */
+.sign-up-grid.main {
+  margin: auto 0;
+}
+
+.sign-up-grid.btn {
+  margin: var(--theme-spacing-1) 0;
+}
+
+.sign-up-grid.specialization.main {
+  max-width: 247px;
+}
+
+.sign-up-grid.specialization.chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sign-up-grid.specialization.chip {
+  margin: 2px;
+}
+
+.sign-up-grid.container {
+  margin: var(--theme-spacing-3) auto;
+}
+
+.sign-up-grid.content {
+  display: flex;
+  flex-direction: column;
+  margin: var(--theme-spacing-1) 0;
+}
+
+.sign-up-grid.content > div {
+  margin: var(--theme-spacing-1) 0;
+}
+
+/* Dashboard */
+.dashboard-grid.main {
+  margin: auto 0;
+}
+
+.dashboard-grid.btn {
+  margin: var(--theme-spacing-1) 0;
+}
+
+.dashboard-grid.container {
+  margin: var(--theme-spacing-3) auto;
+}
+
+.dashboard-grid.content {
+  display: flex;
+  flex-direction: column;
+  margin: var(--theme-spacing-2) 0;
+}
+
+.dashboard-grid.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-grid.profile-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard-grid.specialization.chips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 225px;
+}
+
+.dashboard-grid.specialization.chips > * {
+  margin: 4px;
+}
+
+.dashboard-grid.divider {
+  margin: var(--theme-spacing-1) 0;
+}
+
+.dashboard-grid.card {
+  min-width: 30vw;
+}
+
+@media (max-width: 1280px) {
+  .dashboard-grid.profile-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dashboard-grid.profile-row > * {
+    margin-bottom: 4px;
+  }
+}
+
+/* Online Doctors */
+.online-doctors-grid.main {
+  margin: auto 0;
+}
+
+.online-doctors-grid.btn {
+  display: flex;
+  flex-wrap: wrap;
+  height: 48px;
+}
+
+.online-doctors-grid.card {
+  min-width: 275px;
+  margin-bottom: var(--theme-spacing-2);
+}
+
+.online-doctors-grid.divider {
+  display: flex;
+  margin: var(--theme-spacing-3) 0;
+  width: 100%;
+}
+
+.online-doctors-grid.container {
+  margin: var(--theme-spacing-3) auto;
+}
+
+.online-doctors-grid.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: var(--theme-spacing-3);
+  justify-content: center;
+}
+
+.online-doctors-grid.content > div {
+  margin: var(--theme-spacing-1) var(--theme-spacing-2);
+}
+
+/* Articles */
+.articles-grid.main {
+  margin: auto 0;
+}
+
+.articles-grid.container {
+  margin: var(--theme-spacing-3) auto;
+}
+
+.articles-grid.content {
+  margin: var(--theme-spacing-3) 0;
+}
+
+.articles-grid.card {
+  margin: var(--theme-spacing-3);
+}
+
+.articles-grid.article-description {
+  word-break: break-word;
+}
+
+.articles-grid.article-content {
+  word-break: break-word;
+}
+
+/* Post Article */
+.post-article-grid.main {
+  margin: auto 0;
+}
+
+.post-article-grid.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--theme-spacing-3);
+}
+
+.post-article-grid.container {
+  max-width: 80%;
+  margin: var(--theme-spacing-3) auto;
+}
+
+.post-article-grid.content {
+  max-width: 80%;
+  margin: var(--theme-spacing-3) 0;
+}
+
+@media (max-width: 960px) {
+  .post-article-grid.container {
+    max-width: 95%;
+    margin: var(--theme-spacing-3) auto;
+  }
+
+  .post-article-grid.content {
+    max-width: 95%;
+    margin: var(--theme-spacing-3) 0;
+  }
+}
+
+.post-article-grid.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--theme-spacing-3);
+}
+
+.post-article-grid.card-content > div {
+  margin: var(--theme-spacing-2) 0;
+}
+
+/* Appointments */
+.appointments-grid.main {
+  margin: auto 0;
+}
+
+.appointments-grid.container {
+  margin: var(--theme-spacing-3) auto;
+}
+
+.appointments-grid.content {
+  margin: var(--theme-spacing-3) 0;
+}
+
+.appointments-grid.card {
+  margin: var(--theme-spacing-3);
+}
+
+.appointments-grid.description {
+  word-break: break-word;
+}
+
+.appointments-grid.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--theme-spacing-2);
+}
+
+.appointments-dialog.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Book Appointment */
+.book-appointment-grid.main {
+  margin: auto 0;
+}
+
+.book-appointment-grid.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--theme-spacing-3);
+}
+
+.book-appointment-grid.container {
+  max-width: 95%;
+  margin: var(--theme-spacing-3) auto;
+}
+
+.book-appointment-grid.content {
+  max-width: 80%;
+  margin: var(--theme-spacing-3) 0;
+}
+
+@media (max-width: 960px) {
+  .book-appointment-grid.container {
+    max-width: 95%;
+    margin: var(--theme-spacing-3) auto;
+  }
+
+  .book-appointment-grid.content {
+    max-width: 95%;
+    margin: var(--theme-spacing-3) 0;
+  }
+}
+
+.book-appointment-grid.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--theme-spacing-3);
+}
+
+.book-appointment-grid.card-content > div {
+  margin: var(--theme-spacing-1) 0;
+}
+
+/* About Us */
+.about-us-grid.main {
+  margin: auto 0;
+}
+
+.about-us-grid.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--theme-spacing-3);
+}
+
+.about-us-grid.container {
+  max-width: 95%;
+  margin: var(--theme-spacing-3) auto;
+}
+
+.about-us-grid.content {
+  max-width: 90%;
+  margin: var(--theme-spacing-3) 0;
+}
+
+.about-us-grid.content-2 {
+  margin: var(--theme-spacing-3) 0;
+}
+
+/* Diseases and Conditions */
+.diseases-and-conditions.grid {
+  padding: var(--theme-spacing-1);
+}
+
+/* By First Letter */
+.by-first-letter.grid {
+  padding: var(--theme-spacing-1);
+}
+
+.by-first-letter.grid-content :nth-child(5n) {
+  margin-bottom: var(--theme-spacing-3);
+}
+
+/* Display Disease */
+.display-disease.tab {
+  outline: none;
+}
+
+/* Display Tab */
+.display-tab.grid {
+  padding: var(--theme-spacing-1);
+}
+
+.display-tab.list-paragraph {
+  list-style: none;
+}
